@@ -57,6 +57,6 @@
     "eslint-plugin-react": "^7.6.1",
     "jest": "^22.3.0",
     "nodemon": "^1.14.11",
-    "react-test-renderer": "^16.2.0",
+    "react-test-renderer": "^16.2.0"
   }
 }
