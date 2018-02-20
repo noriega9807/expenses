@@ -18,14 +18,7 @@ exports[`Test header should render header correctly 1`] = `
     ariaCurrent="true"
     to="/create"
   >
-    Create
-  </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    ariaCurrent="true"
-    to="/edit"
-  >
-    Edit
+    Create Expense
   </NavLink>
 </header>
 `;
