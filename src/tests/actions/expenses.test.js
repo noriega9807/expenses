@@ -153,7 +153,7 @@ describe('Test expenses actions', () => {
         });
     });
 
-    test('should fetch the expenses from firebase', () => {
+    test('should fetch the expenses from firebase', (done) => {
         const store = createMockStore({});
 
         store.dispatch(startSetExpenses()).then(() => {
