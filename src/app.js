@@ -8,15 +8,16 @@ import AppRouter, {history} from './routes/AppRouter';
 // Styles
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
-
 import 'react-dates/lib/css/_datepicker.css';
 // Redux
 import configureStore from './store/configureStore';
 import { startSetExpenses  } from './actions/expenses';
 import { login, logout } from './actions/auth';
 import getVisibleExpenses from './selectors/expenses';
-
+// Firebase
 import { firebase } from './firebase/firebase';
+// Components
+import LoadingPage from './components/LoadingPage';
 
 const store = configureStore();
 
@@ -41,7 +42,7 @@ const renderApp = () => {
     }
 };
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
 // store.dispatch(startSetExpenses()).then(() => {
 //     ReactDOM.render(jsx, document.getElementById('app'));
